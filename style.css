@@ -1,0 +1,37 @@
+/* Simple, clean styles for the portfolio */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --accent: #ff9800;
+  --text: #222;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Header / nav */
+header { background: #111; color: #fff; }
+nav { max-width: 1000px; margin: 0 auto; padding: 16px; display: flex; justify-content: space-between; align-items: center; }
+nav h1 { font-size: 20px; letter-spacing: 0.6px; }
+nav ul { list-style: none; display: flex; gap: 14px; }
+nav a { color: #fff; text-decoration: none; font-weight: 500; }
+nav a:hover { opacity: 0.9; }
+
+/* Hero */
+#hero { padding: 48px 0; text-align: center; }
+#hero .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+#hero h2 { font-size: 32px; margin-bottom: 10px; }
+.cta { display: inline-block; margin-top: 12px; text-decoration: none; background: var(--accent); color: #fff; padding: 10px 16px; border-radius: 6px; }
+
+/* Sections */
+.container { max-width: 900px; margin: 32px auto; padding: 0 20px; }
+h2 { margin-bottom: 12px; font-size: 22px; }
+.project-card { background: var(--card); padding: 18px; border-radius: 10px; box-shadow: 0 6px 18px rgba(17,17,17,0.06); margin-bottom: 14px; }
+.project-card a { display: inline-block; margin-top: 8px; text-decoration: none; padding: 8px 12px; background: var(--accent); color: #fff; border-radius: 6px; }
+
+/* Footer */
+footer { text-align: center; padding: 18px 10px; color: #666; margin-top: 24px; font-size: 14px; }
